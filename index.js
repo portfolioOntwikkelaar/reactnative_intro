@@ -3,14 +3,20 @@
 // import App from './App';
 // import {name as appName} from './app.json';
 import React from 'react';
-import {AppRegistry} from 'react-native';
+import {AppRegistry, View} from 'react-native';
+import CarList from './src/components/CarList';
 import  Header  from './src/components/Header';
 
 //create component
 const App = () => {
   
-  return <Header />;
-  
+  return (
+  <View>
+    <Header title={"Fiat"} />
+    <CarList />
+
+  </View>
+  )
 };
 //render component to screen
 
