@@ -12,16 +12,16 @@ const CarDetail = ({brand})=> {
         <View style={headerContainer}>
 
           <Text style={headerText}>{brand.brand}</Text>
-          <Text style={headerText}>{brand.model[0].name}</Text>
+          <Text style={headerText}>{brand.model[1].name}</Text>
         </View>
       </ItemSection>
       <ItemSection>
-        <Image style={imageStyle} source={{ uri: brand.model[0].image }} />
+        <Image style={imageStyle} source={{ uri: brand.model[1].image }} />
       </ItemSection>
       <ItemSection>
         <Button 
         buttonPress={ () => {
-          console.log(brand.brand)
+          Linking.openURL(brand.model[1].url);
         }}></Button>
       </ItemSection>
       

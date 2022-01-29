@@ -19,7 +19,7 @@ class CarList extends Component {
   }
   renderList = () => {
     return this.state.carList.map((brand) => {
-      return <CarDetail key={brand.model[0].name} brand={brand}></CarDetail>
+      return <CarDetail key={brand.model[1].name} brand={brand}></CarDetail>
 
     })
   }
