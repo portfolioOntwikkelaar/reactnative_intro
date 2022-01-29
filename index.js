@@ -4,14 +4,14 @@
 // import {name as appName} from './app.json';
 import React from 'react';
 import {AppRegistry, View} from 'react-native';
-import CarList from './src/components/CarList';
 import  Header  from './src/components/Header';
+import CarList from './src/components/CarList';
 
 //create component
 const App = () => {
   
   return (
-  <View>
+  <View style={{flex: 1}}>
     <Header title={"Fiat"} />
     <CarList />
 

@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { View } from 'react-native'
-import axios from "axios"
+import React, { Component } from 'react';
+import { ScrollView } from 'react-native';
+import axios from "axios";
 import CarDetail from './CarDetail';
 
 class CarList extends Component {
@@ -24,12 +24,12 @@ class CarList extends Component {
     })
   }
   render(){
-
+  console.log(this.state)
     return (
-      <View>
+      <ScrollView>
         {this.renderList()}
         
-      </View>
+      </ScrollView>
     )
   }
 }
